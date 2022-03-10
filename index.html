@@ -3,6 +3,7 @@
 <head>
 	<title>Nerd Muscle</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Create Website Icon -->
 	<link rel="icon" href="./images/GymIcon.png">
 	type= "image/x-icon"
   <link rel="stylesheet" href="css/animate.css">
@@ -366,14 +367,42 @@
      <div class="container">
         <div class="content">
             <div class="box form wow slideInLeft">
+				<!-- Create login Form -->
                <form>
                   <input type="text" placeholder="Username">
 				  <label>Required</label>
                   <input type="email" placeholder="Email" id="mail" name="mail">
                   <input type="text" placeholder="Password">
                   <!-- <textarea placeholder="Enter Message"></textarea> -->
-                  <button type="submit">Login</button>
+                  <button type="submit">Login</button>				  
                </form>
+			   <!-- Create Sign up form -->
+			   <br>
+			  <i><p>Don't have an Account? Create One</p></i> 
+			   <form>
+				<input type="text" placeholder="Username">
+				<label>Required</label>
+				<input type="email" placeholder="Email" id="mail" name="mail">
+				<input type="text" placeholder="Password">
+				<input type="text" placeholder="Confirm Password">
+				<!-- <textarea placeholder="Enter Message"></textarea> -->
+				
+				<button type="submit">Sign Up</button>
+				<script src="https://accounts.google.com/gsi/client" async defer></script>
+				<div id="g_id_onload"
+					data-client_id="YOUR_GOOGLE_CLIENT_ID"
+					data-login_uri="https://your.domain/your_login_endpoint"
+					data-auto_prompt="false">
+				</div>
+				<div class="g_id_signin"
+					data-type="standard"
+					data-size="large"
+					data-theme="outline"
+					data-text="sign_in_with"
+					data-shape="rectangular"
+					data-logo_alignment="left">
+				</div>
+						</form>
             </div>
             <div class="box text wow slideInRight">
                  <h2>Get Connected with a Gym</h2>
@@ -408,6 +437,7 @@
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
 	$(document).ready(function(){
+		
 
       $(".ham-burger, .nav ul li a").click(function(){
        
@@ -447,6 +477,7 @@
 </script>
 <script src="js/wow.min.js"></script>
 <script>
+	// initialize Jquery libraries
     wow = new WOW(
       {
         animateClass: 'animated',
