@@ -7,5 +7,4 @@ email.addEventListener("input", function (event){
     } else {
         email.setCustomValidity("");
     }
-    console.log("ysy");
 });
